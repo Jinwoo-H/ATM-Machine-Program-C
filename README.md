@@ -1,5 +1,5 @@
 # ATM-Machine-Program-C
-A program where one can create accounts with usernames, pins, first and last names, and balances
+A program where one can create and modify accounts with usernames, pins, first and last names, and balances.
 
 This program makes use of file operations and structures in the C language.
 
