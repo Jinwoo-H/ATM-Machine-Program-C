@@ -12,3 +12,5 @@ When creating a new account, the user is prompted to add a username that isn't t
 After one of theses processes, the user has the option to loop back to the start menu, or leave the program.
 
 This program features error proofing.
+
+This program requires a text file named "profiles.txt", with the first line of the file being the amount of profiles (Ex. The first line would be 0 if there are no profiles).
