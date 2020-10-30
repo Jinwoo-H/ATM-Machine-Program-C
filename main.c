@@ -90,16 +90,6 @@ int main()
 
     Profile profile[100];
 
-    //fgets(amountUser,sizeof(amountUser), fp); //First line of file shows how many registered profiles
-    //intAmountUser = atoi(amountUser); //Converts to integer for ease of use
-
-    //for (j=0 ; j<intAmountUser; j++) //Scans the current data in the file and stores it into a struct
-    //{
-      //  fscanf(fp, "%s %s %s %s %f", profile[j].userName, profile[j].pin, profile[j].firstName, profile[j].lastName, &profile[j].balance);
-    //}
-
-    //fclose(fp); //Close file for now
-
     do //Menu and options are looped to allow for reuse withouth re-running code;
     {
         fp = fopen("profiles.txt", "r"); //Scans one more time to be provided with most recent information when the loop is repeated
