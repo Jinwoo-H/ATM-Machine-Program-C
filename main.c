@@ -119,8 +119,7 @@ int main()
 
 
     // ENTER USERNAME
-            //printf("Account Creation\n");
-            //printf("----------------\n\n\n");
+            
             do
             {
                 invalidInput = 0;
@@ -145,16 +144,12 @@ int main()
                 if (newUsername[29] != '\0'){ //If the 30th character is not NULL, the username is too long
                     printf("\n\n--------------------\n");
                     printf("Username is too long\n\n");
-                    //memset(newUsername, 0, sizeof(newUsername)); //Clears the array so next input is not clogged
                     invalidInput = 1;
                     pause();
                     clrscr();
-                    //printf("Account Creation\n");
-                    //printf("----------------\n\n\n");
                 }
                 else { //If the input is not invalid
                     strcpy(profile[intAmountUser].userName, newUsername); //Copies the string value into the struct
-                    //invalidInput = 0; //Breaks condition for the loop
                     clrscr();
                 }
 
@@ -233,8 +228,6 @@ int main()
                     invalidInput = 1;
                     pause();
                     clrscr();
-                    //printf("Account Creation\n");
-                    //printf("----------------\n\n\n");
                 }
                 else { //If the input is not invalid
                     strcpy(profile[intAmountUser].firstName, newFirstName); //Copies the string value into the struct
@@ -266,8 +259,6 @@ int main()
                     invalidInput = 1;
                     pause();
                     clrscr();
-                    //printf("Account Creation\n");
-                    //printf("----------------\n\n\n");
                 }
                 else { //If the input is not invalid
                     strcpy(profile[intAmountUser].lastName, newLastName); //Copies the string value into the struct
@@ -288,7 +279,6 @@ int main()
 
             //Overwriting all of the data with new information
             fp = fopen("profiles.txt", "w+");
-            //fprintf("%i\n", intAmountUser);
             int x;
             fprintf(fp, "%i\n", intAmountUser);
 
